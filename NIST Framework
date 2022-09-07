@@ -1,0 +1,34 @@
+###-Overview
+The NIST Framework is guidance based on existing standards to help organizations better manage and reduce risk. It is organized into 5 key functions to provide a lifecycle of cyber management.
+
+1) Identify
+2) Protect
+3) Detect
+4) Respond
+5) Recover
+
+###-Identify
+Development of an orangizational understanding to manage cyber risk to systems, assets, data etc. Basically, we need to understand our own company 
+1) Identify critical enterprise processes and assets - What is the most important activities that provide critical functioning for the company?
+2) Documentation information flows - Where data is located, and where it flows, from place to place. Where is our data stored and how is it communicated with external partners for example
+3) Maintain hardware/software inventory - Keep inventory/spreadsheet of all our hardware and software, so we can keep track of entry points for attackers
+4) Establish Cyber Policies - Policies and procedures that describe how cybersecurity acitivites will protect information and systems. i.e. Everyone must use MFA, Passwords have ___ level of complexity etc.
+5) Identify threats, vulnerabilities and risk to assets - Ensure risk management processes are established and documented in risk registrars 
+
+###-Protect
+Development and implementation of safeguards to ensure services function
+1) Manage access to assets and info - Unique accounts per employee. Effective ACLs. Security Groups used appropriately. 
+2) Protect sensitive data - i.e. in-transit and at-rest encryption of data. Data is securely destroyed after no more need of it
+3) Regular backups - Keep a backup offline & offset
+4) Protect end-devices - Host-based F/W, A/V etc., disable unecessary services etc.
+5) Management of vulnerabilities - Patching, vulnerability scanners
+6) Train users - Layer 8 issues
+
+###-Detect
+Develop tools/policies to detect cybersecurity events
+1) Test and update detection processes - Develop and test processes and procedures for detected cyber events.  
+2) Monitoring of logs - Logs are needed to ID anonmalies. Can be used to detect changes to accounts, permissions, or new communication channels
+3) Understand your network's baseline/"normal" traffic - If you know how your enterprise normally functions, you are more likely to recognize anonmalies 
+4) Understanding impact of a cyber event - Ensure you can quikcly understand the breadth and depth of the impact of a cyber event 
+
+###-Respond
