@@ -12,6 +12,7 @@ It is organized into 3 primary components:
 2) Implementation Tiers
 3) Profiles
 
+#TODO - Example subcategories
 
 ####- Framework Core -#####
 Key functions to provide a lifecycle of cyber management. It is meant to use simplistic language to enable communication b/t multi-diciplinary teams. The Core is split into 5 FUNCTIONS, each having multiple CATEGORIES, further split into SUBCATEGORIES. The SUBCATEGORIES are OUTCOME DRIVEN, meaning they do not mandate HOW and organization achieves these outcomes, only that they are achieved, allowing the framework to be flexible. Each SUBCATEGORY is also acommpanied by informative references to technical explanations as to how these subcategory may be achieved. 
@@ -24,12 +25,31 @@ Key functions to provide a lifecycle of cyber management. It is meant to use sim
 5) Recover
 
 ###-Identify
-Development of an orangizational understanding to manage cyber risk to systems, assets, data etc. Basically, we need to understand our own company 
-1) Identify critical enterprise processes and assets - What is the most important activities that provide critical functioning for the company?
-2) Documentation information flows - Where data is located, and where it flows, from place to place. Where is our data stored and how is it communicated with external partners for example
-3) Maintain hardware/software inventory (Asset Management) - Keep inventory/spreadsheet of all our hardware and software, so we can keep track of entry points for attackers
-4) Establish Cyber Policies (Governance program) - ID Policies and procedures that describe how cybersecurity acitivites will protect information and systems. i.e. Everyone must use MFA, Passwords have ___ level of complexity etc.
-5) Identify threats, vulnerabilities and risk to assets - Ensure risk management processes are established and documented in risk registrars 
+Development of an orangizational understanding to manage cyber risk to systems, assets, data etc. Basically, we need to understand our own company before we can protect the company.
+
+1) Asset Management: Keep inventory/spreadsheet of all our hardware and software, so we can keep track of entry points for attackers. This also includes staff that may be critical for specific funtions
+- Do we know how many endpoint devices we have?
+- Do we know what technicians are able to use this critical software?
+
+2) Business Enviornment: What is the most important activities that provide critical functioning for the company? 
+- What do ppl need from us? 
+- What our business goals? 
+
+3) Governance: ID Policies and procedures and any legal requirements in our cyber program. e.g. 
+- Do we need MFA?
+- What is our password complexity level required for our superusers?
+- Medical data backups must be kept for 40 years oe w/e. Also identifies roles/responsibilities of users/super-users/external stakeholders. What are their responsiblities? 
+
+4) Risk Assessment: Helping us understand what risks we have in our envionrment. Identification of IMPACT and LIKLIHOOD of risks. i.e. meteor vs ransomware
+- Do we have a patch management system? 
+- Do we do vuln. scanning. 
+
+5) Risk Management Stragtegy: Identification of the controls and protections and strategies to protect the risk data we have. This doesn't cover the actual protection, but rather just the identification of these strategeies and that they exist.  
+
+6) Supply Chain Risk Management: Identification of suppliers 
+- Who are our suppliers
+- What external partieies have access to our network
+- If we access other ppl's supply-chain, as a consumer, are we protected from them? 
 
 ###-Protect
 Development and implementation of safeguards to ensure services function
@@ -61,12 +81,28 @@ Develop and implement the ability to restore capabilities of a service that was 
 
 
 ####- Implementation Tiers -#####
-Tiers refer to the degree to which an org's cybersecurity risk management practices rigorously bend to the characteristics defined by the Framework. 
+Tiers refer to the degree to which an org's cybersecurity risk management practices rigorously bend to the characteristics defined by the Framework. i.e. what level do we need to implment this? Heavily implemented into our system, or partially, or we don't care. 
 
 Tier 1 - Partial
+- Your org. has an Ad. Hoc risk management (on the fly, no processes in place to manage it)
+- Limited cybersecurity risk awareness. Are you aware of the newest Wannacry varient? Are you aware of newest vulnerabilities etc. 
+- Low external resource participation (Do you participate in webinars and shit, are you part of any orgs. etc. are you sharing informtion w/ others) 
+
 Tier 2 - Risk informed
+- Some risk management practices 
+- You're aware of the newest threats but don't really have a program to address them 
+- Information external participation
+
 Tier 3 - Repeatable
+- Formalized risk management 
+- Organization-wide program to address new risks 
+- Recives external partner information but doesn't share 
+
 Tier 4 - Adaptive
+- ADaptive risk management practices 
+- Cultural risk informed program  
+- Actively shares information with others 
+
 
 High tiers are NOT mandatory. But rather the tiers chosen should reflect the organization's goals and feasability, such as finanical fesability
 
@@ -75,7 +111,7 @@ High tiers are NOT mandatory. But rather the tiers chosen should reflect the org
 ####- Profiles -#####
 A profile is sort of an organization's alignment of their own requirements, objectives, risk appetites, & resources, against their DESIRED outcome from following the Framework Core. An organization, for example, may have a "Current" profile, but they want to meet a specific "Target" profile. 
 
-Profiles function to optimize/fine-tune the Framework to best serve that specific organization. There is no "right" or "wrong" way to meet the framework. It depends on the org. For example, we could have the below, which maps our subcategories we want to meet, and the size of the gap (what we currently have vs. what we want) to meet that subcategory, the priority of that subcategory and the budget available to meet it. 
+Profiles function to optimize/fine-tune the Framework to best serve that specific organization. There is no "right" or "wrong" way to meet the framework. It depends on the org. For example, we could have the below, which maps our subcategories we want to meet (TARGET PROFILE) , and the size of the gap (what we currently have i.e. CURRENT STATE PROFILE vs. what we want TARGET PROFILE) to meet that subcategory, the priority of that subcategory and the budget available to meet it. 
 
 Subcategory | Priority | Gaps | Budget | 
 1           | High     | Small| $$$    |
@@ -92,7 +128,15 @@ BASICALLY THE FRAMEWORK ALLOWS FOR STRONGER/EASIER COMMUNICATION OF ASPECTS OF C
 
 The framework is scalable (because it is NOT outcome driven, so org's can meet it as best they can, using what resources they have) Both a large and small org can approach a subcategory/outcome in a manner that is feasible for them. Flexiblity. 
 
----> Example usages:
-1) Assess your current state of operations (What is a prioirty, review existing politices, identify vulnerabilities and risks)
-2) Build a target state. "I want to meet these specific goals"
-3) Build a roadmap with budgets and activities you will pursue to meet that target state. 
+---> Example Communication Path the Framework Takes:
+1) Starts w/ Senior Executive Level - Executives need to assess what are the org's ultimate mission goals, priorities etc. They choose the tiers to be selected. 
+What is our risk appetite? 
+What is our budget? 
+
+2) Buisness and Process Levels - Translation layer between operational/implementation & senior exe's who don't know wtf they're doing. 
+- How does the organization's overall objectives, how does that translate to our individual business/processes, i.e. Websites, Databases, etc. 
+- Creation of a framework profile 
+- Collects feedback from Implemenation and Operations Levels, and reports changes to current and future risk to senior executives 
+
+3) Operational Levels - Focus on actually doing the work to implement changes to secure infrastrucuture. 
+- May assess the implementation and feedback into Business & Process Levels. 
