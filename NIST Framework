@@ -32,3 +32,12 @@ Develop tools/policies to detect cybersecurity events
 4) Understanding impact of a cyber event - Ensure you can quikcly understand the breadth and depth of the impact of a cyber event 
 
 ###-Respond
+The ability to take action against a cyber event
+1) Ensure response plans are tested
+2) Ensure response plans are updated
+3) Coordinate with internal and external stakeholders - Our response plans should include external stakeholders as they may be able to contribute to improving the plan and execution. I think this means things like vendors and such we work with? 
+
+###-Recover
+Develop and implement the ability to restore capabilities of a service that was impaired due to a cyber event
+- Ensure recovery plans are updated - As with response plans, testing execution of the recovery plan to train employees and highlight areas for improvement
+- Management public relations & reputation - Consider how you will manage public relations so that your information sharing is accurate, complete for the public, but also minimize dmg to company reputation. 
