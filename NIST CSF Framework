@@ -30,50 +30,141 @@ Development of an orangizational understanding to manage cyber risk to systems, 
 1) Asset Management: Keep inventory/spreadsheet of all our hardware and software, so we can keep track of entry points for attackers. This also includes staff that may be critical for specific funtions
 - Do we know how many endpoint devices we have?
 - Do we know what technicians are able to use this critical software?
+- Communication and data flows w/i the org are mapped
+- Assets (hardware, s/w, personnel) are prioritized based on their criticality
 
 2) Business Enviornment: What is the most important activities that provide critical functioning for the company? 
 - What do ppl need from us? 
 - What our business goals? 
+- What is our org's role in the larger supply chain?
+- What are the dependencies for critical functions that we offer, and how are they delivered?
 
 3) Governance: ID Policies and procedures and any legal requirements in our cyber program. e.g. 
 - Do we need MFA?
 - What is our password complexity level required for our superusers?
-- Medical data backups must be kept for 40 years oe w/e. Also identifies roles/responsibilities of users/super-users/external stakeholders. What are their responsiblities? 
+- Medical data backups must be kept for 40 years oe w/e. 
+- Identify roles/responsibilities of users/super-users/external stakeholders. What are their responsiblities? 
 
 4) Risk Assessment: Helping us understand what risks we have in our envionrment. Identification of IMPACT and LIKLIHOOD of risks. i.e. meteor vs ransomware
 - Do we have a patch management system? 
 - Do we do vuln. scanning. 
+- Are we actively getting new information/keeping up-to-date via forums and stuff
+- Identification of threats, and their potential impact and liklihood
+- ID our "risk" value, based on impact and likelihoods 
 
 5) Risk Management Stragtegy: Identification of the controls and protections and strategies to protect the risk data we have. This doesn't cover the actual protection, but rather just the identification of these strategeies and that they exist.  
+- What is our risk tolerance? 
+- What processes do we have in place to deal with risk data? 
 
 6) Supply Chain Risk Management: Identification of suppliers 
 - Who are our suppliers
 - What external partieies have access to our network
+- Have we assessed the 3rd parties 
 - If we access other ppl's supply-chain, as a consumer, are we protected from them? 
+- Are we assessing third -party suppliers using audits and stuff to confirm they're meeting contracual obligations? 
 
 ###-Protect
 Development and implementation of safeguards to ensure services function
-1) Manage access to assets and info - Unique accounts per employee. Effective ACLs. Security Groups used appropriately. 
-2) Protect sensitive data - i.e. in-transit and at-rest encryption of data. Data is securely destroyed after no more need of it
-3) Regular backups - Keep a backup offline & offset
-4) Protect end-devices - Host-based F/W, A/V etc., disable unecessary services etc.
-5) Management of vulnerabilities - Patching, vulnerability scanners
-6) Train users - Layer 8 issues
+1) Identity Management, Authentication & Access: 
+- Unqiue accounts per employee
+- Properly configured ACLs
+- Security Groups
+- Remote access is secured 
+- Physical access is secured
+- Network segregation 
+
+2) Awareness and Training:
+- Layer 8 issue 
+
+3) Data security
+- At-rest encryption / in-transit encryption
+- There is capacity to ensure availablity of services can be maintained (i.e. retina axis server lol)
+- Integrity checking for software, firmware (hashing)
+- Development and testing environments are separate
+
+4) Information Protection Processes and Procedures:
+- Do we have a baseline configuration of IT to promote high security i.e. all unecessary services are turned off etc. i.e. concept of least functionality. Svrs/workstattions etc. only do what they need to do, and nothing else
+- Change control in place to properly go through Change mangement steps
+- Backups are taken, tested, and maintained
+- Data is securely destroyed if no longer needed 
+- IR and Busicness Continuity response plans are in place
+
+5) Maintenance:
+- Who is performing maintenance and repair of assets?
+- Are these reparations logged
+- Remote maintenance is not possible unless authorized
+
+6) Protective Technology: 
+- There are audits that are documented and reviewed
+- Removeable media is protected and restricted
+- Principle of least functionality 
+- Redundancy is in place, i.e. hotswappable, load balancers, failsafe's etc. 
+
 
 ###-Detect
 Develop tools/policies to detect cybersecurity events
-1) Test and update detection processes - Develop and test processes and procedures for detected cyber events.  
-2) Monitoring of logs - Logs are needed to ID anonmalies. Can be used to detect changes to accounts, permissions, or new communication channels
-3) Understand your network's baseline/"normal" traffic - If you know how your enterprise normally functions, you are more likely to recognize anonmalies 
-4) Understanding impact of a cyber event - Ensure you can quikcly understand the breadth and depth of the impact of a cyber event 
+1) Anonmalies and Events:
+- Understand your network's baseline/"normal" traffic. If you know how your enterprise normally functions, you are more likely to recognize anonmalies. What is your "known good"
+- Detected events can be analyzed to undrstand wtf is happening
+- Event data is collected and correlated from multiple different sources
+
+2) Continuous monitoring:
+- The network is constantly monitored to detect potential cyber events
+- The physical environment is monitored
+- Malicious code is detected
+- Unauthorized personelle, devices, and software is monitored
+- Vulernability scans performed
+
+3) Detection Processes:
+- Detection processes are tested
+- Detection process are continuously improved
+- Who is monitoring/assigned to detection? Do they know their responsibilities?
+- When detected, is it communicated properly to the right ppl?
+
+
 
 ###-Respond
 The ability to take action against a cyber event
-1) Ensure response plans are tested
-2) Ensure response plans are updated
-3) Coordinate with internal and external stakeholders - Our response plans should include external stakeholders as they may be able to contribute to improving the plan and execution. I think this means things like vendors and such we work with? 
+
+1) Response Planning
+We've detected smth has gone wrong:
+- What is our response plan (i.e. we have firedrills so we know what needs to be done)
+
+2) Communications
+- Personnel know their roles and order of operations whena  response is needed
+- Who do we need to tell?
+- There is coordination with stakeholders when response plans are executed
+
+3) Analysis
+- Notifications from detection systems are investigated
+- Impact of the incident is investigated
+- Forensics performed
+- Incidents are categorized
+
+4) Mitigation
+- Incidents are contained
+- Incidents are mitigateed
+- Any newly identified vuls. are mitigated and documented as accepted risks
+- Identification of "why" this occured
+
+5) Improvements
+- Lessons learned. Is our response plan good enough, after the dust has settled?
+- Response strategies are updated. Maybe we didn't expect this person to be on vacation, and he got the notification. So we need to update the process to ensure we have a 2nd person, for example
+
+
 
 ###-Recover
+1) Recovery Planning
+- Recovery plan is executed during or after a cyber incident 
+
+2) Improvements
+- Recovery plans incorporate lessons learned and are updated
+
+3) Communications
+- Public relations are managed 
+- Reputation is repaired after an incident
+- Recovery activities are communicated to internal and external stakeholders, and executives. 
+
 Develop and implement the ability to restore capabilities of a service that was impaired due to a cyber event
 - Ensure recovery plans are updated - As with response plans, testing execution of the recovery plan to train employees and highlight areas for improvement
 - Management public relations & reputation - Consider how you will manage public relations so that your information sharing is accurate, complete for the public, but also minimize dmg to company reputation. 
