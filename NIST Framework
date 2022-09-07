@@ -1,6 +1,15 @@
 ###-Overview
-The NIST Framework is guidance based on existing standards to help organizations better manage and reduce risk. It is organized into 5 key functions to provide a lifecycle of cyber management.
+The NIST Framework is guidance based on existing standards to help organizations better manage and reduce risk. It is organized into 3 primary components:
 
+1) Framework Core
+2) Implementation Tiers
+3) Profiles
+
+
+####- Framework Core -#####
+Key functions to provide a lifecycle of cyber management. It is meant to use simplistic language to enable communication b/t multi-diciplinary teams. The Core is split into 5 FUNCTIONS, each having multiple CATEGORIES, further split into SUBCATEGORIES. The SUBCATEGORIES are OUTCOME DRIVEN, meaning they do not mandate HOW and organization achieves these outcomes, only that they are achieved, allowing the framework to be flexible. Each SUBCATEGORY is also acommpanied by informative references to technical explanations as to how these subcategory may be achieved. 
+
+---> FUNCTIONS:
 1) Identify
 2) Protect
 3) Detect
@@ -41,3 +50,28 @@ The ability to take action against a cyber event
 Develop and implement the ability to restore capabilities of a service that was impaired due to a cyber event
 - Ensure recovery plans are updated - As with response plans, testing execution of the recovery plan to train employees and highlight areas for improvement
 - Management public relations & reputation - Consider how you will manage public relations so that your information sharing is accurate, complete for the public, but also minimize dmg to company reputation. 
+
+
+
+####- Implementation Tiers -#####
+Tiers refer to the degree to which an org's cybersecurity risk management practices rigorously bend to the characteristics defined by the Framework. 
+
+Tier 1 - Partial
+Tier 2 - Risk informed
+Tier 3 - Repeatable
+Tier 4 - Adaptive
+
+High tiers are NOT mandatory. But rather the tiers chosen should reflect the organization's goals and feasability, such as finanical fesability
+
+
+
+####- Profiles -#####
+A profile is sort of an organization's alignment of their own requirements, objectives, risk appetites, & resources, against their DESIRED outcome from following the Framework Core. An organization, for example, may have a "Current" profile, but they want to meet a specific "Target" profile. 
+
+Profiles function to optimize/fine-tune the Framework to best serve that specific organization. There is no "right" or "wrong" way to meet the framework. It depends on the org. For example, we could have the below, which maps our subcategories we want to meet, and the size of the gap (what we currently have vs. what we want) to meet that subcategory, the priority of that subcategory and the budget available to meet it. 
+
+Subcategory | Priority | Gaps | Budget | 
+1           | High     | Small| $$$    |
+2           | Low      | Large| $      |
+3           | Moderate | Med  | $      |
+4           | High     | Small| $$     | 
