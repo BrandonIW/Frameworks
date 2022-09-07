@@ -1,5 +1,12 @@
 ###-Overview
-The NIST Framework is guidance based on existing standards to help organizations better manage and reduce risk. It is organized into 3 primary components:
+The NIST Framework is guidance based on existing standards to help organizations better manage and reduce risk. It was an executive order in 2013, and NIST was tasked with its creation. It had some original criteria such as:
+1) Must be technology neutral, meanining no vendor-specific shit
+2) Guidance for measuring the performance of implementing the Framework
+3) Allows orgs to ID areas for improvement 
+4) Must be flexible and account for massive differences between organizations
+5) Help owners, non-technical ppl identify and assess cyber risk
+
+It is organized into 3 primary components:
 
 1) Framework Core
 2) Implementation Tiers
@@ -20,8 +27,8 @@ Key functions to provide a lifecycle of cyber management. It is meant to use sim
 Development of an orangizational understanding to manage cyber risk to systems, assets, data etc. Basically, we need to understand our own company 
 1) Identify critical enterprise processes and assets - What is the most important activities that provide critical functioning for the company?
 2) Documentation information flows - Where data is located, and where it flows, from place to place. Where is our data stored and how is it communicated with external partners for example
-3) Maintain hardware/software inventory - Keep inventory/spreadsheet of all our hardware and software, so we can keep track of entry points for attackers
-4) Establish Cyber Policies - Policies and procedures that describe how cybersecurity acitivites will protect information and systems. i.e. Everyone must use MFA, Passwords have ___ level of complexity etc.
+3) Maintain hardware/software inventory (Asset Management) - Keep inventory/spreadsheet of all our hardware and software, so we can keep track of entry points for attackers
+4) Establish Cyber Policies (Governance program) - ID Policies and procedures that describe how cybersecurity acitivites will protect information and systems. i.e. Everyone must use MFA, Passwords have ___ level of complexity etc.
 5) Identify threats, vulnerabilities and risk to assets - Ensure risk management processes are established and documented in risk registrars 
 
 ###-Protect
